@@ -1,0 +1,37 @@
+<!doctype html>
+<html dir="ltr" lang="{{ site.noita.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  {% include robots.html %}
+  {% include meta-description.html %}
+
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+ {% include header-unipd.html %}
+
+<div class="row">    
+     <div class="large-9 push-3 columns">
+      
+      <h3>{{ page.title }}&nbsp;&nbsp;<small>({{ page.date | date: '%F' }})</small></h3>
+      
+      {{ content }}            
+     </div>
+ {% include sidebar.html %}
+</div>
+
+
+ {% include footer.html %}
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+    

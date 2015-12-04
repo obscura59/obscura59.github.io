@@ -1,0 +1,14 @@
+name: "My first jekyll site	"
+description: " Primo sito creato con Jekyll"
+
+url: "http://obscura59.github.io"
+
+#paginate: 10
+
+permalink: pretty
+highlighter: pygments
+markdown: kramdown
+relative_permalinks: true
+
+lang: it
+timezone: Europe/Rome
